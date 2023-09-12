@@ -16,7 +16,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <PersistGate loading={null} persistor={persistor}>
     <Provider store={store}>
-      <BrowserRouter basename="/wallet">
+      <BrowserRouter basename="/web-app-Wallet-js-team-progect">
         <ThemeProvider theme={theme}>
           <GlobalStyles />
           <App />
