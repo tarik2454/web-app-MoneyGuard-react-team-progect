@@ -35,4 +35,4 @@ Money Guard - це командний проект, спрямований на 
 😊 Ласкаво просимо на наш сайт, скоріш почніть слідкувати за своїми транзакціями! 😊
 
 ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
-                 (https://apazient.github.io/wallet/)
+                 ([https://tarik2454.github.io/web-app-Wallet-js-team-progect/](https:/tarik2454.github.io/web-app-Wallet-js-team-progect/)
