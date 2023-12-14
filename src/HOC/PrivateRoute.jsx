@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
-import { getIsAuth } from '../../redux/Auth/selectors';
+import { getIsAuth } from '../redux/Auth/selectors';
 import { Navigate, useLocation } from 'react-router-dom';
 
 export const PrivateRoute = ({ children }) => {

@@ -25,6 +25,10 @@ export const FormikLoginForm = styled(Form)`
   align-items: center;
 `;
 
+export const StyledHintText = styled.span`
+  font-size: 12px;
+`;
+
 export const StyledInput = styled(Field)`
   border: none;
   outline: none;

@@ -11,6 +11,7 @@ import {
   StyledErrorMessageEmail,
   StyledErrorMessagePassword,
   StyledH2,
+  StyledHintText,
   StyledInput,
   StyledLabels,
   StyledLinkReg,
@@ -59,10 +60,11 @@ export const LoginForm = () => {
             <SpriteSVG name="logo" />
           </StyledDivSpriteSvgLogo>
           <StyledH2>Money Guard</StyledH2>
+          <StyledHintText>*you can also use a test credentials</StyledHintText>
         </StyledDivItems>
         <Formik
           onSubmit={handleSubmit}
-          initialValues={{ password: '', email: '' }}
+          initialValues={{ password: '123456', email: 'test-user@gmail.com' }}
           validationSchema={validationSchema}
         >
           <FormikLoginForm>

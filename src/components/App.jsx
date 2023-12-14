@@ -3,10 +3,8 @@ import Layout from './Layout/Layout';
 import HomeTab from './HomeTab/HomeTab';
 import SummaryPage from 'pages/SummaryPage/SummaryPage';
 import RegistrationPage from 'pages/RegistrationPage/RegistrationPage';
-import { PublicRoute } from 'HOC/PublicRoute/PublicRoute';
 import LoginPage from 'pages/LoginPage/LoginPage';
 import NotFound from 'pages/NotFound/NotFound';
-import { PrivateRoute } from 'HOC/PrivateRoute/PrivateRoute';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { currentUser } from 'redux/Auth/operations';
@@ -16,6 +14,8 @@ import { Navigate } from 'react-router-dom';
 
 import { fetchTransactions } from 'redux/TransactionsList/operations';
 import { getIsAuth } from 'redux/Auth/selectors';
+import { PrivateRoute } from 'HOC/PrivateRoute';
+import { PublicRoute } from 'HOC/PublicRoute';
 
 export const App = () => {
   const isRefresh = useSelector(state => state.user.isRefresh);
