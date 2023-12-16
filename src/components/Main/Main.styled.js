@@ -4,7 +4,7 @@ export const MainContainer = styled.main`
   margin: 0px auto;
   overflow-x: hidden;
   max-width: 320px;
-  height: 90vh;
+  height: 100vh;
   padding: 0 15px;
   &::-webkit-scrollbar {
     width: 2px;

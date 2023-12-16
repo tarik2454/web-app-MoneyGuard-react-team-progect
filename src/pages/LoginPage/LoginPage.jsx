@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Overlay } from './LoginPage.styled';
 import { LoginForm } from 'components/LoginForm/LoginForm';
 import {
@@ -11,11 +11,20 @@ import {
 } from 'components/Main/Main.styled';
 import { useMediaQuery } from 'react-responsive';
 import { IS_DESKTOP, IS_MOBILE, IS_TABLET } from 'styles/const ';
+import { useDispatch } from 'react-redux';
+import { logoutThunk } from 'redux/Auth/operations';
 
 const LoginPage = () => {
   const isMobile = useMediaQuery(IS_MOBILE);
   const isTablet = useMediaQuery(IS_TABLET);
   const isDesktop = useMediaQuery(IS_DESKTOP);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(logoutThunk());
+  }, [dispatch]);
+
   return (
     <>
       {isMobile && (

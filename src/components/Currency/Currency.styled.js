@@ -10,23 +10,26 @@ export const CurrencyContainerStyled = styled.div`
     display: block;
   }
 `;
+
 export const TheadCurrencyStyled = styled.thead`
   margin-top: 0;
   width: 320px;
   height: 50px;
   background: rgba(255, 255, 255, 0.2);
 `;
+
 export const TableCurrencyStyled = styled.table`
   padding: 13px 20px;
   width: 320px;
   border-collapse: collapse;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0 0 8px 0;
   background: rgba(74, 86, 226, 0.1);
 
   @media screen and (min-width: 767px) {
     width: 336px;
-    height: 80px;
+    height: 128px;
   }
+
   @media screen and (min-width: 1280px) {
     max-width: 480px;
     height: 88px;
@@ -46,10 +49,10 @@ export const TrCurrencyStyled = styled.tr`
     padding-left: 60px;
   }
 `;
+
 export const ThCurrencyStyled = styled.th``;
+
 export const TbodyCurrencyStyled = styled.tbody`
-  @media screen and (min-width: 767px) {
-  }
   @media screen and (min-width: 1280px) {
     width: 100%;
   }
@@ -66,19 +69,6 @@ export const TdCurrencyStyled = styled.td`
   text-align: center;
   text-transform: uppercase;
 
-  // &:first-child {
-  //   text-align-last: left;
-  //   padding: 22px 0 0 84px;
-  // }
-  // &:last-child {
-  //   text-align-last: right;
-  //   padding: 24px 200px 0 0;
-  // }
-  // &:nth-child(2) {
-  //   text-align-last: center;
-  //   padding: 22px 62px 0 0;
-  // }
-
   @media screen and (min-width: 1280px) {
     padding-top: 24px;
   }
@@ -90,19 +80,25 @@ export const CurrencyImgStyled = styled.div`
   border-radius: 0px 0px 8px 8px;
   background: rgba(74, 86, 226, 0.1);
   position: relative;
+
   @media screen and (min-width: 767px) {
     width: 336px;
   }
+
   @media screen and (min-width: 1280px) {
     width: 480px;
-    height: 235px;
+    height: 100vh;
+    background: rgba(74, 86, 226, 0.1);
   }
 `;
+
 export const EuroImgStyled = styled.span`
   display: none;
+
   @media screen and (min-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 1280px) {
     display: block;
     color: var(--dashboard-text, #ff868d);
@@ -115,6 +111,7 @@ export const EuroImgStyled = styled.span`
     bottom: 10px;
   }
 `;
+
 export const EllipseImgStyled = styled.div`
   position: relative;
   left: 242px;
@@ -124,6 +121,7 @@ export const EllipseImgStyled = styled.div`
     left: 254px;
     top: -13px;
   }
+
   @media screen and (min-width: 1280px) {
     left: 362px;
     top: 34px;
@@ -131,11 +129,14 @@ export const EllipseImgStyled = styled.div`
     height: 9px;
   }
 `;
+
 export const UsdImgStyled = styled.span`
   display: none;
+
   @media screen and (min-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 1280px) {
     display: block;
     color: var(--dashboard-text, #ff868d);
@@ -149,6 +150,7 @@ export const UsdImgStyled = styled.span`
     bottom: 10px;
   }
 `;
+
 export const EllipseImgStyled2 = styled.div`
   position: relative;
   left: 38px;
@@ -156,8 +158,8 @@ export const EllipseImgStyled2 = styled.div`
 
   @media screen and (min-width: 767px) {
     left: 40px;
-    /* top: 16px; */
   }
+
   @media screen and (min-width: 1280px) {
     left: 58px;
     top: 58px;
@@ -165,18 +167,22 @@ export const EllipseImgStyled2 = styled.div`
     height: 9px;
   }
 `;
+
 export const LineImgStyled = styled.div`
   position: absolute;
   width: 320px;
   height: 70px;
   top: -3px;
+
   @media screen and (min-width: 767px) {
     top: -1px;
   }
+
   @media screen and (min-width: 1280px) {
     top: 43px;
   }
 `;
+
 export const WaveImgStyled = styled.div`
   position: relative;
   width: 320px;
@@ -199,6 +205,7 @@ export const WaveImgStyled = styled.div`
   @media screen and (min-width: 767px) {
     top: -36px;
   }
+
   @media screen and (min-width: 1280px) {
     top: 40px;
     width: 480px;

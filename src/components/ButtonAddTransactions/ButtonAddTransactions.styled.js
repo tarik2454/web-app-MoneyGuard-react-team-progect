@@ -3,12 +3,11 @@ import { styled } from 'styled-components';
 export const StyledAdd = styled.button`
   position: fixed;
   right: 47px;
-  bottom: 20px;
+  bottom: 45px;
   height: 44px;
   width: 44px;
   border: none;
   border-radius: 50%;
-  /* margin-left: auto; */
   padding: 12px;
   outline: none;
   cursor: pointer;

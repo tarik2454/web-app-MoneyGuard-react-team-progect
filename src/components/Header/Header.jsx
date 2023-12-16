@@ -44,13 +44,11 @@ const Header = () => {
 
           <StyledUserThumb>
             <StyledHeaderText>{editString(username)}</StyledHeaderText>
-            <StyledUserWrapper>
-              <StyledExitSvg onClick={handleLogout}>
+            <StyledUserWrapper onClick={handleLogout}>
+              <StyledExitSvg>
                 <SpriteSVG name={'exit'} />
               </StyledExitSvg>
-              <StyledHeaderBtn type="button" onClick={handleLogout}>
-                Exit
-              </StyledHeaderBtn>
+              <StyledHeaderBtn>Exit</StyledHeaderBtn>
             </StyledUserWrapper>
           </StyledUserThumb>
         </HeaderInner>
