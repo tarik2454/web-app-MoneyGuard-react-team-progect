@@ -22,7 +22,6 @@ export const TableCurrencyStyled = styled.table`
   padding: 13px 20px;
   width: 320px;
   border-collapse: collapse;
-  border-radius: 0 0 8px 0;
   background: rgba(74, 86, 226, 0.1);
 
   @media screen and (min-width: 767px) {

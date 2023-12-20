@@ -1,9 +1,18 @@
-import { styled } from 'styled-components';
+import { styled, keyframes } from 'styled-components';
+
+const bounceAnimation = keyframes`
+  0% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+`;
 
 export const StyledAdd = styled.button`
-  position: fixed;
-  right: 47px;
-  bottom: 45px;
   height: 44px;
   width: 44px;
   border: none;
@@ -20,6 +29,18 @@ export const StyledAdd = styled.button`
     #7000ff 150.71%
   );
   box-shadow: 1px 9px 15px 0px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: ${bounceAnimation} 2s infinite ease-in-out;
+
+  position: fixed;
+  right: 47px;
+  bottom: 47px;
+
+  @media screen and (min-width: 1280px) {
+    right: 40px;
+    bottom: 40px;
+  }
 `;
 
 export const StyledPlusAddSvg = styled.div`

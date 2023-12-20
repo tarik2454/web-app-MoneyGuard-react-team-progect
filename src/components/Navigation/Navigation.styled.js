@@ -65,7 +65,7 @@ export const NavLinkStyledTablet = styled(NavLinkStyled)`
 `;
 
 export const NavWrapperStyledTablet = styled(NavWrapperStyled)`
-  padding: 40px 0 28px 0;
+  padding: 40px 0 27px 0;
   flex-direction: column;
   align-items: flex-start;
 `;

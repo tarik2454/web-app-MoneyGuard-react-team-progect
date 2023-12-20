@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const BalanceContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 32px;
 
   @media screen and (min-width: 1280px) {
@@ -25,15 +26,16 @@ export const BalanceBoxStyled = styled.div`
     height: 80px;
     border-radius: 8px;
   }
+
   @media screen and (min-width: 1280px) {
     width: 480px;
     background: rgba(82, 59, 126, 0.6);
     box-shadow: 1px 9px 15px 0px rgba(0, 0, 0, 0.2);
-    /* padding-top: 8px; */
     padding-bottom: 11px;
     padding-left: 56px;
   }
 `;
+
 export const BalanceTitleStyled = styled.h2`
   color: var(--white-40, rgba(255, 255, 255, 0.4));
   font-family: Poppins-Regular;
@@ -42,8 +44,8 @@ export const BalanceTitleStyled = styled.h2`
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  /* margin-bottom: 8px; */
 `;
+
 export const BalanceStyled = styled.span`
   color: var(--white, #fbfbfb);
   font-family: Poppins-Bold;

@@ -2,33 +2,18 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.main`
   margin: 0px auto;
-  overflow-x: hidden;
   max-width: 320px;
-  height: 100vh;
   padding: 0 15px;
-  &::-webkit-scrollbar {
-    width: 2px;
-  }
-  &::-webkit-scrollbar-track {
-    background: rgba(82, 59, 126, 0.6);
-  }
-  &::-webkit-scrollbar-thumb {
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.082) 0%,
-      rgba(255, 255, 255, 0.2) 100%
-    );
+  overflow-x: hidden;
 
-    border-radius: 4px;
-  }
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding: 0 32px;
   }
+
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
     padding: 0 16px;
-    overflow-y: hidden;
   }
 `;
 

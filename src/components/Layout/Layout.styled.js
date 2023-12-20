@@ -14,22 +14,20 @@ export const WrapperNavBalCur = styled.div`
   justify-content: space-between;
   display: flex;
   gap: 32px;
-  margin-bottom: 20px;
 
   @media screen and (min-width: 1280px) {
     gap: 49px;
-    height: inherit;
   }
 `;
 
 export const WrapperNavCur = styled.div`
   display: flex;
   flex-direction: column;
-
   position: relative;
 
   @media screen and (min-width: 1280px) {
     width: inherit;
+
     &::after {
       display: block;
       content: '';

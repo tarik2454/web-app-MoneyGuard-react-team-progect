@@ -4,7 +4,7 @@ export const StyledSelect = styled(Select)`
   width: 100%;
   height: 50px;
   background: rgba(74, 86, 226, 0.1);
-  /* Стили для выбранного значения */
+
   .react-select__single-value {
     color: #fbfbfb;
     font-size: 16px;
@@ -27,15 +27,16 @@ export const StyledSelect = styled(Select)`
     line-height: 1.5;
     box-shadow: none;
   }
+
   .react-select__value-container {
     padding: 0;
   }
-  /* Убираем обводку при фокусе */
+
   .react-select__control:focus {
     outline: none;
     border: 1px solid transparent;
   }
-  /*Убираем синий ховер  */
+
   .react-select__control:hover {
     border-color: rgba(255, 255, 255, 0.6);
     box-shadow: none;
@@ -47,16 +48,15 @@ export const StyledSelect = styled(Select)`
   }
 
   .react-select__indicators {
-    // падинг для иконки
     padding: 0px 20px;
     display: flex;
     align-items: center;
   }
 
   .react-select__indicator-separator {
-    display: none; /* Скрываем разделитель индикаторов */
+    display: none;
   }
-  /* Стили для опций (вариантов) */
+
   .react-select__option {
     color: #fbfbfb;
     font-family: Poppins-Regular;
@@ -64,6 +64,7 @@ export const StyledSelect = styled(Select)`
     transition: all 0.3s, color 0.3s;
     margin-top: 0;
     cursor: pointer;
+
     &:hover,
     &.react-select__option--is-focused,
     &.react-select__option--is-selected {
@@ -90,34 +91,40 @@ export const StyledSelect = styled(Select)`
       rgba(106, 70, 165, 1) 61.04%,
       rgba(133, 93, 175, 1) 100%
     );
-
     overflow: hidden;
     margin: 0;
   }
+
   .react-select__menu-list {
-    overflow-y: auto; /* Добавляем вертикальную прокрутку при необходимости */
+    overflow-y: auto;
     overflow-x: hidden;
     overflow: auto;
+
     &::-webkit-scrollbar {
       width: 4px;
     }
+
     &::-webkit-scrollbar-track {
       background: rgba(82, 59, 126, 0.6);
     }
+
     &::-webkit-scrollbar-thumb {
       background: rgba(255, 255, 255, 0.6);
       border-radius: 4px;
-    } /* Скрываем горизонтальную полосу прокрутки */
+    }
   }
+
   .react-select__placeholder {
     color: #fbfbfb;
     font-size: 16px;
     font-weight: 400;
     font-family: Poppins-Regular;
   }
+
   @media screen and (min-width: 768px) {
     width: 160px;
   }
+
   @media screen and (min-width: 1280px) {
     width: 180px;
   }
@@ -136,22 +143,25 @@ export const StyledDiagramTab = styled.div`
   display: flex;
   gap: 20px;
   flex-direction: column;
-  margin-top: 32px; // отступ от бублика
-  margin-bottom: 20px; // отступ от catagory
+  margin-top: 32px;
+  margin-bottom: 20px;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     gap: 16px;
-    margin-top: 40px; // отступ от баланса
-    margin-bottom: 20px; // отступ от catagory
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
+
   @media screen and (min-width: 1280px) {
     gap: 32px;
   }
 `;
+
 export const WrapperDiagramTab = styled.div`
   width: 280px;
   height: 50px;
-  flexshrink: 0;
+
   @media screen and (min-width: 768px) {
     width: 160px;
   }

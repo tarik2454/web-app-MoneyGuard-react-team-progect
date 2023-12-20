@@ -17,6 +17,7 @@ export const StyledStatisticsTable = styled.div`
     background-color: rgba(82, 59, 126, 0.6);
     box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(50px);
+
     & p {
       font-size: 16px;
       font-style: normal;
@@ -25,11 +26,13 @@ export const StyledStatisticsTable = styled.div`
       padding: 16px;
     }
   }
+
   @media only screen and (min-width: 768px) {
     .statistics-header {
       width: 336px;
     }
   }
+
   @media only screen and (min-width: 1280px) {
     .statistics-header {
       width: 395px;
@@ -40,6 +43,7 @@ export const StyledStatisticsTable = styled.div`
 export const StyledStatisticsList = styled.ul`
   display: flex;
   flex-direction: column;
+
   & li {
     display: flex;
     flex-direction: row;
@@ -48,14 +52,17 @@ export const StyledStatisticsList = styled.ul`
     width: 280px;
     padding: 16px;
   }
+
   .category-color {
     width: 24px;
     height: 24px;
     border-radius: 2px;
   }
+
   .category-sum {
     margin-left: auto;
   }
+
   .category-item {
     padding-left: 16px;
   }
@@ -73,14 +80,17 @@ export const StyledStatisticsList = styled.ul`
     & li {
       width: 336px;
     }
+
     .gradient {
       width: 336px;
     }
   }
+
   @media only screen and (min-width: 1280px) {
     & li {
       width: 395px;
     }
+
     .gradient {
       width: 395px;
     }
@@ -90,6 +100,7 @@ export const StyledStatisticsList = styled.ul`
 export const StyledStatisticsTotal = styled.ul`
   display: flex;
   flex-direction: column;
+
   & li {
     display: flex;
     flex-direction: row;
@@ -99,22 +110,26 @@ export const StyledStatisticsTotal = styled.ul`
     padding: 16px 16px 0;
     font-weight: 600;
   }
+
   .total-sum-exp {
     margin-left: auto;
     color: #ff868d;
     text-align: right;
     font-weight: 600;
   }
+
   .total-sum-inc {
     margin-left: auto;
     color: #ffb627;
     text-align: right;
     font-weight: 600;
   }
+
   .total-item {
     color: #fbfbfb;
     font-weight: 600;
   }
+
   @media only screen and (min-width: 768px) {
     & li {
       width: 336px;

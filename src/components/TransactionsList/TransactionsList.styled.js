@@ -1,16 +1,17 @@
 import { styled } from 'styled-components';
+
 export const TableStyled = styled.table`
   width: 100%;
   border-radius: 8px;
   border-collapse: collapse;
 `;
+
 export const TableScrollBody = styled.table`
   overflow-y: auto;
-  overflow-x: none;
-  height: 350px;
   display: block;
   width: 100%;
   font-family: Poppins-Regular;
+
   &::-webkit-scrollbar {
     width: 4px;
   }
@@ -18,13 +19,24 @@ export const TableScrollBody = styled.table`
     background: rgba(82, 59, 126, 0.6);
   }
   &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.082) 0%,
       rgba(255, 255, 255, 0.2) 100%
     );
+  }
 
-    border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    height: 46vh;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 66.5vh;
+  }
+
+  @media screen and (min-width: 1700px) {
+    height: 69.1vh;
   }
 `;
 
@@ -235,10 +247,10 @@ export const StyledLiTransList = styled.li`
   line-height: 1.5;
   font-family: Poppins-Regular;
   position: relative;
- &:not(:last-child){
-      border-bottom: 1px solid rgba(255,255,255,0.41);
-}
-}
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.41);
+  }
+
   &:not(:last-child)::after {
     content: '';
     position: absolute;
@@ -287,9 +299,5 @@ export const EditIconMobTrans = styled.div`
 export const CommentMobTrans = styled.div`
   max-width: 130px;
 `;
-export const ContainerTableListMob = styled.div`
-  padding: 0 0 20px 0;
-  @media screen and (min-width: 768px) {
-    padding: 0;
-  }
-`;
+
+export const ContainerTableListMob = styled.div``;

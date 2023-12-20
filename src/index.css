@@ -1,14 +1,10 @@
 /* bring in normalize.css styles */
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Poppins-Regular',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins-Regular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
-
 
 @font-face {
   font-family: 'Poppins-Regular';
@@ -63,4 +59,3 @@ ul {
 a {
   text-decoration: none;
 } */
-

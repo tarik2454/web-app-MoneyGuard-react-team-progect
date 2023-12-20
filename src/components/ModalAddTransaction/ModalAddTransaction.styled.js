@@ -62,11 +62,13 @@ export const StyledInputWrapTab = styled.div`
   gap: ${({ theme }) => theme.spacing(10)};
   align-items: center;
   flex-direction: column;
+
   @media screen and (min-width: 768px) {
     gap: ${({ theme }) => theme.spacing(8)};
     flex-direction: row;
   }
 `;
+
 export const StyledInput = styled(Field)`
   padding-bottom: ${({ theme }) => theme.spacing(2)};
   padding-left: ${({ theme }) => theme.spacing(5)};
@@ -79,9 +81,15 @@ export const StyledInput = styled(Field)`
   color: ${({ theme }) => theme.colors.colorText};
   background-color: transparent;
   overflow: hidden;
+
   &:focus {
     outline: none;
   }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
   &:-webkit-autofill,
   &:-webkit-autofill:focus {
     -webkit-background-clip: text;
@@ -91,17 +99,19 @@ export const StyledInput = styled(Field)`
 
 export const StyledInputValue = styled(StyledInput)`
   font-weight: 600;
+
   @media screen and (min-width: 768px) {
     width: 181px;
     text-align: center;
     padding-left: 0px;
   }
 `;
+
 export const StyledInputComment = styled.textarea`
+  width: 280px;
   padding: 0;
   padding-left: ${({ theme }) => theme.spacing(5)};
-  width: 280px;
-  min-height: 76px;
+  padding-bottom: 27px;
   font-family: Poppins-Regular;
   font-size: 18px;
   resize: none;
@@ -109,14 +119,21 @@ export const StyledInputComment = styled.textarea`
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   color: ${({ theme }) => theme.colors.colorText};
   background-color: transparent;
+
   &:focus {
     outline: none;
   }
+
   &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
   }
+
   @media screen and (min-width: 768px) {
     width: 394px;
+    max-height: 42px;
+    padding-top: 10px;
+    padding-bottom: 0;
     padding-left: ${({ theme }) => theme.spacing(2)};
   }
 `;
@@ -134,6 +151,7 @@ export const StyledButtonWrapper = styled.div`
 export const StyledButtonAdd = styled(StyledButton)`
   background: ${({ theme }) => theme.colors.coloredBtn};
 `;
+
 export const StyledButtonCancel = styled(StyledButton)`
   color: #623f8b;
   background: ${({ theme }) => theme.colors.colorText};
@@ -143,6 +161,7 @@ export const StyledButtonCancel = styled(StyledButton)`
 export const StyledDatatimeWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
   .rdtPicker {
     width: 280px;
     border: none;
@@ -154,21 +173,26 @@ export const StyledDatatimeWrapper = styled.div`
       rgba(106, 70, 165, 1) 61.04%,
       rgba(133, 93, 175, 1) 100%
     );
+
     @media screen and (min-width: 768px) {
       width: 250px;
     }
   }
+
   .rdtPicker td.rdtActive,
   .rdtPicker td.rdtActive:hover {
     background-color: ${({ theme }) => theme.colors.hover};
     border-radius: 20px;
   }
+
   .rdtPicker td.rdtToday:before {
     display: none;
   }
+
   td.rdtActive.rdtToday:before {
     display: none;
   }
+
   .rdtPicker td:hover {
     background: linear-gradient(
       96.76deg,
@@ -180,12 +204,11 @@ export const StyledDatatimeWrapper = styled.div`
     border-radius: 20px;
   }
 
-  element.style {
-  }
   .rdtPicker thead tr:first-of-type th:hover {
     background: transparent;
   }
 `;
+
 export const StyledDatetime = styled(Datetime)`
   input {
     padding-bottom: ${({ theme }) => theme.spacing(2)};
@@ -198,18 +221,23 @@ export const StyledDatetime = styled(Datetime)`
     color: ${({ theme }) => theme.colors.colorText};
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     background-color: transparent;
+
     @media screen and (min-width: 768px) {
       padding-left: ${({ theme }) => theme.spacing(3)};
       width: 181px;
     }
+
     &:focus {
       outline: none;
     }
+
     &::placeholder {
+      color: red;
       background-color: transparent;
     }
   }
 `;
+
 //Styled SVG
 export const StyledCalendarSvg = styled.div`
   position: absolute;
@@ -217,9 +245,11 @@ export const StyledCalendarSvg = styled.div`
   transform: translateX(-10%);
 
   pointer-events: none;
+  color: red;
   width: 24px;
   height: 24px;
   fill: rgba(115, 74, 239, 1);
+
   @media screen and (min-width: 768px) {
     right: 15%;
     transform: translateX(-15%);
@@ -227,14 +257,16 @@ export const StyledCalendarSvg = styled.div`
 `;
 
 export const StyledCloseIcon = styled.div`
-  display: none;
+  display: block;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  stroke: ${({ theme }) => theme.colors.colorText};
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
   @media screen and (min-width: 768px) {
-    display: block;
-    cursor: pointer;
-    width: 16px;
-    height: 16px;
-    stroke: ${({ theme }) => theme.colors.colorText};
-    position: absolute;
     top: 20px;
     right: 20px;
   }
@@ -253,8 +285,8 @@ export const OverlayGradient = styled.div`
   background: rgba(47, 21, 176, 0.73);
   filter: blur(100px);
 `;
-//Error
 
+//Error
 export const StyledErrorMessage = styled(ErrorMessage)`
   width: 100%;
   text-align: center;
@@ -265,6 +297,7 @@ export const StyledErrorMessage = styled(ErrorMessage)`
   bottom: 50%;
   right: 30%;
   transform: translate(50%, 50%);
+
   @media screen and (min-width: 768px) {
     top: 50%;
     right: 50%;
