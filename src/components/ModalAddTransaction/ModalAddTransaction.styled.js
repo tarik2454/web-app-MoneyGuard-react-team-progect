@@ -15,23 +15,24 @@ export const StyledForm = styled(Form)`
   border-radius: ${({ theme }) => theme.spacing(2)};
   box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.25);
   background: radial-gradient(rgb(63, 46, 150), rgb(95, 71, 140));
+
   @media screen and (min-width: 768px) {
     padding: 40px 72px;
   }
 `;
+
 export const StyledTitle = styled.h2`
   text-align: center;
   font-family: Poppins-Regular;
   font-size: 24px;
   line-height: 1.5;
   color: ${({ theme }) => theme.colors.colorText};
+
   @media screen and (min-width: 768px) {
     font-size: 30px;
   }
 `;
-//---------//
 
-// Styles for toggle
 export const StyledToggleWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -39,6 +40,7 @@ export const StyledToggleWrapper = styled.div`
   justify-content: center;
   gap: ${({ theme }) => theme.spacing(5)};
 `;
+
 export const StyledToggleText = styled.p`
   font-family: Poppins-SemiBold;
   font-size: 16px;
@@ -46,9 +48,6 @@ export const StyledToggleText = styled.p`
   color: ${({ theme }) => theme.colors.navLink};
 `;
 
-//---------//
-
-// Styles for input
 export const StyledInputWrapper = styled.div`
   position: relative;
   display: flex;
@@ -138,9 +137,6 @@ export const StyledInputComment = styled.textarea`
   }
 `;
 
-//---------//
-
-// styles for buttons
 export const StyledButtonWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -157,7 +153,6 @@ export const StyledButtonCancel = styled(StyledButton)`
   background: ${({ theme }) => theme.colors.colorText};
 `;
 
-//Datetime
 export const StyledDatatimeWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -238,7 +233,6 @@ export const StyledDatetime = styled(Datetime)`
   }
 `;
 
-//Styled SVG
 export const StyledCalendarSvg = styled.div`
   position: absolute;
   right: 10%;
@@ -272,7 +266,6 @@ export const StyledCloseIcon = styled.div`
   }
 `;
 
-//Overlay Gradient
 export const OverlayGradient = styled.div`
   position: fixed;
   z-index: -1;
@@ -286,7 +279,6 @@ export const OverlayGradient = styled.div`
   filter: blur(100px);
 `;
 
-//Error
 export const StyledErrorMessage = styled(ErrorMessage)`
   width: 100%;
   text-align: center;

@@ -2,7 +2,7 @@
   "name": "wallet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tarik2454.github.io/web-app-Wallet-react-team-progect/",
+  "homepage": "https://tarik2454.github.io/web-app-MoneyGuard-react-team-progect/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.3",

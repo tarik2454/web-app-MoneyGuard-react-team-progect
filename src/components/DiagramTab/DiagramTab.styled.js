@@ -143,7 +143,6 @@ export const StyledDiagramTab = styled.div`
   display: flex;
   gap: 20px;
   flex-direction: column;
-  margin-top: 32px;
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {

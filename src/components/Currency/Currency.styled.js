@@ -5,9 +5,11 @@ export const CurrencyContainerStyled = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 12px;
 
   @media screen and (min-width: 767px) {
     display: block;
+    margin-top: 0;
   }
 `;
 
@@ -201,7 +203,8 @@ export const WaveImgStyled = styled.div`
       rgba(255, 255, 255, 0) 100%
     );
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
+    min-width: 337px;
     top: -36px;
   }
 

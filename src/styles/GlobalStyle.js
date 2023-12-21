@@ -4,7 +4,7 @@ export const GlobalStyles = createGlobalStyle`
 
 body {
   margin: 0; 
-  min-height: 100vh;  
+  min-height: calc(100vh - 82px);  
   color: ${({ theme }) => theme.colors.colorText}; 
   background-color: #101010;
   font-family: Poppins-Regular, sans-serif;

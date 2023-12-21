@@ -29,6 +29,7 @@ const Header = () => {
   const handleLogout = () => {
     dispatch(setIsModalLogoutOpen(true));
   };
+
   return (
     <>
       <StyledHeader>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledStatisticsTable = styled.div`
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 
   .statistics-header {
     display: flex;
@@ -25,16 +25,12 @@ export const StyledStatisticsTable = styled.div`
       line-height: normal;
       padding: 16px;
     }
-  }
 
-  @media only screen and (min-width: 768px) {
-    .statistics-header {
+    @media only screen and (min-width: 768px) {
       width: 336px;
     }
-  }
 
-  @media only screen and (min-width: 1280px) {
-    .statistics-header {
+    @media only screen and (min-width: 1280px) {
       width: 395px;
     }
   }

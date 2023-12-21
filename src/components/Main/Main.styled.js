@@ -4,11 +4,11 @@ export const MainContainer = styled.main`
   margin: 0px auto;
   max-width: 320px;
   padding: 0 15px;
-  overflow-x: hidden;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding: 0 32px;
+    overflow-x: hidden;
   }
 
   @media screen and (min-width: 1280px) {

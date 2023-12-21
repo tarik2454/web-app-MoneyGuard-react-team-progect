@@ -28,7 +28,7 @@ export const TableScrollBody = styled.table`
   }
 
   @media screen and (min-width: 768px) {
-    height: 46vh;
+    height: 42.3vh;
   }
 
   @media screen and (min-width: 1280px) {

@@ -13,7 +13,7 @@ export const FormikForm = styled.form`
   width: 320px;
   height: 600px;
   margin-top: 60px;
-  /* border-radius: 8px; */
+
   @media screen and (min-width: 768px) {
     border-radius: 8px;
     width: 540px;
@@ -79,12 +79,14 @@ export const Input = styled.input`
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
+
   @media screen and (min-width: 768px) {
     width: 181px;
     text-align: center;
     padding-left: 0px;
   }
 `;
+
 export const InputText = styled.input`
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
@@ -98,6 +100,7 @@ export const InputText = styled.input`
   padding-bottom: 8px;
   width: 280px;
   padding: 0 20px;
+
   @media screen and (min-width: 768px) {
     width: 420px;
     text-align: center;
@@ -109,9 +112,9 @@ export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
-  /* max-width: 180px; */
   width: 100%;
   align-items: center;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
@@ -119,8 +122,6 @@ export const InputWrapper = styled.div`
 
 export const StyledTransaction = styled.h2`
   display: flex;
-  /* width: 381px; */
-  /* height: 40px; */
   justify-content: center;
   flex-shrink: 0;
   color: #fbfbfb;
@@ -166,8 +167,6 @@ export const StyledCloseIconEdit = styled.div`
     top: 20px;
     right: 20px;
   }
-  @media screen and (min-width: 768px) {
-  }
 `;
 
 export const StyledCategory = styled.div`
@@ -185,6 +184,7 @@ export const StyledCategory = styled.div`
 export const StyledP = styled.p`
   margin: 10px;
 `;
+
 export const StyledErrorMessage = styled.div`
   width: 100%;
   text-align: center;
@@ -195,6 +195,7 @@ export const StyledErrorMessage = styled.div`
   bottom: 50%;
   right: 30%;
   transform: translate(50%, 50%);
+
   @media screen and (min-width: 768px) {
     top: 50%;
     right: 50%;

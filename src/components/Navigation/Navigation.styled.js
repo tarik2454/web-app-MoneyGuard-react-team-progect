@@ -7,28 +7,32 @@ export const NavWrapperStyled = styled.ul`
   justify-content: center;
   gap: 35px;
   padding: 12px 0 12px 0;
+
   @media screen and (min-width: 768px) {
     gap: ${({ theme }) => theme.spacing(5)};
   }
 `;
+
 export const NavIconStyled = styled.div`
   width: 38px;
   height: 38px;
   border-radius: 7px;
   transition: all 250ms ease-in-out;
   fill: ${({ theme }) => theme.colors.navLink};
+
   &:hover,
   &:active {
     fill: #734aef;
     filter: drop-shadow(0px 3px 10px rgba(74, 86, 226, 0.5));
     background-color: ${({ theme }) => theme.colors.colorText};
   }
-  //Медіаправила
+
   @media screen and (min-width: 768px) {
     width: 24px;
     height: 24px;
   }
 `;
+
 export const NavLinkStyled = styled(NavLink)`
   display: flex;
   align-items: center;
@@ -43,7 +47,6 @@ export const NavLinkStyled = styled(NavLink)`
   transition: all 250ms ease-in-out;
   color: ${({ theme }) => theme.colors.navLink};
 
-  //Ховер і Актів
   &.hover,
   &.active {
     font-family: Poppins-Bold;
