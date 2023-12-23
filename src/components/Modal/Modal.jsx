@@ -16,8 +16,12 @@ const Modal = ({ children }) => {
         dispatch(showSelect(false));
       }
     };
+
+    document.body.style.overflow = 'hidden';
     window.addEventListener('keydown', handleEscape);
+
     return () => {
+      document.body.style.overflow = 'auto';
       window.removeEventListener('keydown', handleEscape);
     };
   }, [dispatch]);

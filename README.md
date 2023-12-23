@@ -1,6 +1,8 @@
-==================== MONEY GUARD ====================
+<div align="center">========== MONEY GUARD ==========</div>
 
-<img src="./public/readme/img-1.png">
+<br>
+
+<img src="./public/readme/preview.jpg">
 
 Привіт! Ми команда 56 буткемпу GoIT, представляємо наш проект: ⬇️⬇️⬇️⬇️⬇️⬇️
 
@@ -45,4 +47,4 @@ Money Guard - це командний проект, спрямований на 
 транзакціями! 😊
 
 ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
-(https://apazient.github.io/wallet/)
+[Money Guard](https://tarik2454.github.io/web-app-MoneyGuard-react-team-progect)
