@@ -4,7 +4,7 @@ import { editString } from 'helpers/helpers';
 import { toast } from 'react-toastify';
 
 export const API = axios.create({
-  baseURL: 'https://wallet.goit.ua',
+  baseURL: 'https://wallet.b.goit.study',
 });
 
 const setToken = token => {
